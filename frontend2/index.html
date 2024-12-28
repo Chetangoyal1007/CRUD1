@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+
+        <!-- Form to Create or Update User -->
+        <div class="form-container">
+            <h2 id="form-title">Create User</h2>
+            <form id="user-form">
+                <input type="hidden" id="user-id">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="fathername" placeholder="Father's Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phoneno" placeholder="Phone Number" required>
+                <button type="submit">Create User</button>
+            </form>
+        </div>
+
+        <!-- List of Users -->
+        <div class="user-list">
+            <h3>User List</h3>
+            <ul id="user-list">
+                <!-- Users will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
