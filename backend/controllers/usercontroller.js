@@ -7,6 +7,7 @@ const createuser = async (req, res) => {
         const NewUser = new usermodels({
             name,
             fathername,
+            mothername,
             email,
             phoneno
         });

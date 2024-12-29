@@ -1,5 +1,4 @@
-// API URL (make sure this matches the correct backend URL)
-const apiUrl = 'http://localhost:4000/api'; // Assuming your backend is running on port 4000
+const apiUrl = 'http://localhost:4000/api';  // Backend API URL
 
 // Fetch and display all users
 function fetchUsers() {
@@ -7,7 +6,7 @@ function fetchUsers() {
         .then(response => response.json())
         .then(users => {
             const userList = document.getElementById('user-list');
-            userList.innerHTML = ''; // Clear the list before updating
+            userList.innerHTML = '';  // Clear the list before updating
 
             users.forEach(user => {
                 const li = document.createElement('li');
@@ -37,7 +36,7 @@ document.getElementById('user-form').addEventListener('submit', function(event) 
     const buttonText = document.querySelector('form button').textContent;
 
     // Check if we are in Create or Update mode
-    if (buttonText === 'createuser') {
+    if (buttonText === 'Create User') {
         // Create new user
         fetch(apiUrl, {
             method: 'POST',
