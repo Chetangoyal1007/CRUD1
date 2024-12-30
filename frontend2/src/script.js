@@ -27,10 +27,11 @@ document.getElementById('user-form').addEventListener('submit', function(event) 
 
     const name = document.getElementById('name').value;
     const fathername = document.getElementById('fathername').value;
+    const mothername = document.getElementById('mothername').value;
     const email = document.getElementById('email').value;
     const phoneno = document.getElementById('phoneno').value;
 
-    const user = { name, fathername, email, phoneno };
+    const user = { name, fathername,mothername, email, phoneno };
 
     const formTitle = document.getElementById('form-title');
     const buttonText = document.querySelector('form button').textContent;
@@ -76,6 +77,7 @@ function editUser(userId) {
             // Fill the form with user data
             document.getElementById('name').value = user.name;
             document.getElementById('fathername').value = user.fathername;
+            document.getElementById('mothername').value = user.mothername;
             document.getElementById('email').value = user.email;
             document.getElementById('phoneno').value = user.phoneno;
             document.getElementById('user-id').value = user._id;
@@ -98,7 +100,8 @@ function deleteUser(userId) {
 function clearForm() {
     document.getElementById('name').value = '';
     document.getElementById('fathername').value = '';
-    document.getElementById('email').value = '';
+    document.getElementById('mothername').value = '';
+    document.getElementById('emai').value = '';
     document.getElementById('phoneno').value = '';
     document.getElementById('user-id').value = ''; // Clear user ID field
 }
