@@ -8,7 +8,6 @@ const createuser = async (req, res) => {
             name,
             fathername,
             mothername,
-            address,
             email,
             phoneno
         });
