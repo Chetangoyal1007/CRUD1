@@ -12,6 +12,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         
     },
+    address: {
+        type: String,
+        
+        
+    },
     email: {
         type: String,
         
